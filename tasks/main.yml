@@ -1,2 +1,7 @@
 ---
-# tasks file for interfaces
+- include: 'debian.yml'
+  when: ansible_os_family == 'Debian'
+
+- include: 'ethernet_configuration.yml'
+  when: network_ether_interfaces is defined
+

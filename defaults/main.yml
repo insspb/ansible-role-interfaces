@@ -1,2 +1,6 @@
 ---
-# defaults file for interfaces
+network_ether_interfaces: []
+interfaces_net_path:
+  debian: /etc/network/interfaces.d
+  redhat: /etc/sysconfig/network-scripts
+

@@ -1,2 +1,3 @@
 ---
-# handlers file for interfaces
+- name: restart networking
+  service: name=networking state=restarted
